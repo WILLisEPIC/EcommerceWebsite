@@ -1,0 +1,285 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.login a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+}
+
+.login a:hover {
+    border-bottom: 2px solid #B06500;
+    color: #B06500;
+}
+
+.cart-count {
+    position: relative;
+    top: -20px;
+    left: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.search-form {
+    display: flex;
+    width: 450px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 0.5px solid #000;
+    border-radius: 5px 0 0 5px;
+    width: 85%;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #777;
+    color: #000;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    width: 15%;
+}
+
+
+.search-form button:hover {
+    background-color: #B06500;
+    color: #fff;
+}
+
+h3{
+    margin-left: 30px;
+}
+
+.nav.nav-underline {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.nav-item a {
+    color: #000;
+    margin-right: 20px;
+}
+
+.nav-item a:hover {
+    color: #B06500;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+footer p{
+    margin: 5px 0;
+    text-align: center;
+}
+
+.receipt-container{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.receipt-container hr{
+    width: 90%;
+    align-self: center;
+}
+
+.company{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.company-profile{
+    display: block;
+    font-family: sans-serif;
+    justify-content: left;
+    align-items: start;
+    color: #000;
+    background-color: white;
+}
+
+.company-logo{
+    display: flex;
+    justify-content: right;
+}
+
+.company-detail{
+    display: block;
+    padding: 5px;
+    color: #000;
+}
+
+.user-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-detail{
+    display: block;
+    padding: 5px;
+    color: #000;
+}
+
+.user-info{
+    display: block;
+    font-family: sans-serif;
+    justify-content: left;
+    align-items: start;
+    color: #000;
+    background-color: white;
+}
+
+.deliver-info{
+    display: block;
+    justify-content: right;
+    font-family: sans-serif;
+    align-items: start;
+    color: #000;
+    background-color: white;
+}
+
+.deliver-add{
+    display: block;
+}
+
+.deliver-add textarea:disabled{
+    color: #000;
+    resize: unset;
+}
+
+.payment-method{
+    display: block;
+}
+
+.item-container{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.item-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: auto;
+}
+
+.item-container th,td{
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.item-container th{
+    background-color: #f2f2f2;
+}
+
+.item-container tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.item-container tr:hover{
+    background-color: #f2f2f2;
+}
+
+.footer {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #ccc;
+}
+
+.footer p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: large;
+    color: #555;
+}
+
+@media (max-width: 767px) {
+    .top {
+        align-items: right;
+    }
+
+    .top img{
+        height: 40px;
+        width: 80px;
+    }
+    
+    .search-form {
+        display: flex;
+        width: 160px;
+        height: 30px;
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    
+    .search-form input[type="text"] {
+        width: 120px;
+        border-radius: 5px 0 0 5px;
+    }
+    
+    .search-form button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .search-form img {
+        display: flex;
+        height: 15px;
+        width: 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .login a {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .nav-item a {
+        margin: 5px;
+        font-size: 12px;
+    }
+}
